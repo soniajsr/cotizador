@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tipo vehiculo:</b>
+  <%= @rango.tipo_vehiculo_id %>
+</p>
+
+<p>
+  <b>Monto desde:</b>
+  <%= @rango.monto_desde %>
+</p>
+
+<p>
+  <b>Monto hasta:</b>
+  <%= @rango.monto_hasta %>
+</p>
+
+<p>
+  <b>Tasa:</b>
+  <%= @rango.tasa %>
+</p>
+
+<p>
+  <b>Danos:</b>
+  <%= @rango.danos %>
+</p>
+
+<p>
+  <b>Robo:</b>
+  <%= @rango.robo %>
+</p>
+
+
+<%= link_to 'Edit', edit_rango_path(@rango) %> |
+<%= link_to 'Back', rangos_path %>

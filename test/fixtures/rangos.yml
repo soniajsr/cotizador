@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tipo_vehiculo_id: 1
+  monto_desde: 9.99
+  monto_hasta: 9.99
+  tasa: 9.99
+  danos: 9.99
+  robo: 9.99
+
+two:
+  tipo_vehiculo_id: 1
+  monto_desde: 9.99
+  monto_hasta: 9.99
+  tasa: 9.99
+  danos: 9.99
+  robo: 9.99

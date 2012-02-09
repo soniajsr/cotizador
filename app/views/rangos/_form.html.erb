@@ -1,0 +1,41 @@
+<%= form_for(@rango) do |f| %>
+  <% if @rango.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rango.errors.count, "error") %> prohibited this rango from being saved:</h2>
+
+      <ul>
+      <% @rango.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo_vehiculo_id %><br />
+    <%= f.number_field :tipo_vehiculo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :monto_desde %><br />
+    <%= f.text_field :monto_desde %>
+  </div>
+  <div class="field">
+    <%= f.label :monto_hasta %><br />
+    <%= f.text_field :monto_hasta %>
+  </div>
+  <div class="field">
+    <%= f.label :tasa %><br />
+    <%= f.text_field :tasa %>
+  </div>
+  <div class="field">
+    <%= f.label :danos %><br />
+    <%= f.text_field :danos %>
+  </div>
+  <div class="field">
+    <%= f.label :robo %><br />
+    <%= f.text_field :robo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

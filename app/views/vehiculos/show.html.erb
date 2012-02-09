@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tipo vehiculo:</b>
+  <%= @vehiculo.tipo_vehiculo_id %>
+</p>
+
+<p>
+  <b>Marca:</b>
+  <%= @vehiculo.marca_id %>
+</p>
+
+<p>
+  <b>Placa:</b>
+  <%= @vehiculo.placa %>
+</p>
+
+<p>
+  <b>Modelo:</b>
+  <%= @vehiculo.modelo %>
+</p>
+
+<p>
+  <b>Valor comercial:</b>
+  <%= @vehiculo.valor_comercial %>
+</p>
+
+<p>
+  <b>Valor prima:</b>
+  <%= @vehiculo.valor_prima %>
+</p>
+
+<p>
+  <b>Tasa:</b>
+  <%= @vehiculo.tasa %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehiculo_path(@vehiculo) %> |
+<%= link_to 'Back', vehiculos_path %>

@@ -1,0 +1,2 @@
+module RangosHelper
+end

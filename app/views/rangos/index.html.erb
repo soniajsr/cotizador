@@ -1,0 +1,33 @@
+<h1>Listing rangos</h1>
+
+<table>
+  <tr>
+    <th>Tipo vehiculo</th>
+    <th>Monto desde</th>
+    <th>Monto hasta</th>
+    <th>Tasa</th>
+    <th>Danos</th>
+    <th>Robo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rangos.each do |rango| %>
+  <tr>
+    <td><%= rango.tipo_vehiculo_id %></td>
+    <td><%= rango.monto_desde %></td>
+    <td><%= rango.monto_hasta %></td>
+    <td><%= rango.tasa %></td>
+    <td><%= rango.danos %></td>
+    <td><%= rango.robo %></td>
+    <td><%= link_to 'Show', rango %></td>
+    <td><%= link_to 'Edit', edit_rango_path(rango) %></td>
+    <td><%= link_to 'Destroy', rango, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rango', new_rango_path %>

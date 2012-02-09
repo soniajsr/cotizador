@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tipo_vehiculo_id: 1
+  marca_id: 1
+  placa: MyString
+  modelo: 1
+  valor_comercial: 9.99
+  valor_prima: 9.99
+  tasa: 9.99
+
+two:
+  tipo_vehiculo_id: 1
+  marca_id: 1
+  placa: MyString
+  modelo: 1
+  valor_comercial: 9.99
+  valor_prima: 9.99
+  tasa: 9.99
